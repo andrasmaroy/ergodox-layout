@@ -139,26 +139,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [BASE] = LAYOUT_ergodox(
 // left hand
- M(A_MPN)           ,M(A_9)      ,M(A_7)      ,M(A_5)  ,M(A_3)  ,M(A_1)  ,KC_F11
-,KC_GRV             ,KC_QUOT     ,KC_COMM     ,KC_DOT  ,KC_P    ,KC_Y    ,TD(CT_LBP)
-,TD(CT_TA)          ,KC_A        ,KC_O        ,KC_E    ,KC_U    ,KC_I
-,KC_MPLY            ,KC_SLSH     ,KC_Q        ,KC_J    ,KC_K    ,KC_X    ,TD(CT_TMUX)
-,KC_NO              ,KC_NO       ,KC_NO       ,KC_NO   ,TD(CT_CLN)
+ KC_EQL             ,KC_1        ,KC_2        ,KC_3    ,KC_4    ,KC_5    ,KC_ESC
+,KC_BSLS            ,KC_Q        ,KC_W        ,KC_E    ,KC_R    ,KC_T    ,M(Fx)
+,KC_TAB             ,KC_A        ,KC_S        ,KC_D    ,KC_F    ,KC_G
+,F(F_SFT)           ,KC_Z        ,KC_X        ,KC_C    ,KC_V    ,KC_B    ,OSL(NMDIA)
+,F(F_GUI)           ,KC_GRV      ,KC_BSLS     ,KC_NO   ,F(F_GUI)
 
-                                                            ,F(F_ALT),F(F_GUI)
-                                                                     ,F(F_CTRL)
-                                                    ,KC_BSPC,F(F_SFT),KC_ESC
+                                                            ,F(F_CTRL),F(F_ALT)
+                                                                       ,KC_HOME
+                                                          ,KC_SPC,KC_ENT,KC_END
 
                                                                 // right hand
-                                                               ,M(Fx)     ,M(A_0)  ,M(A_2)    ,M(A_4)  ,M(A_6)  ,M(A_8)   ,M(A_PLVR)
-                                                               ,TD(CT_RBP),KC_F    ,KC_G      ,KC_C    ,KC_R    ,KC_L     ,KC_BSLS
-                                                                          ,KC_D    ,KC_H      ,KC_T    ,KC_N    ,KC_S     ,KC_EQL
-                                                               ,TD(CT_TPS),KC_B    ,KC_M      ,KC_W    ,KC_V    ,KC_Z     ,TD(CT_SR)
-                                                                                   ,KC_MINS   ,KC_NO   ,KC_NO   ,KC_NO    ,KC_NO
+                                                               ,KC_LEAD   ,KC_6    ,KC_7      ,KC_8    ,KC_9    ,KC_0     ,KC_MINS
+                                                               ,KC_LBRC   ,KC_Y    ,KC_U      ,KC_I    ,KC_O    ,KC_P     ,KC_RBRC
+                                                                          ,KC_H    ,KC_J      ,KC_K    ,KC_L    ,KC_SCLN  ,KC_QUOT
+                                                               ,M(Fx)     ,KC_N    ,KC_M      ,KC_COMM ,KC_DOT  ,KC_SLSH  ,F(F_SFT)
+                                                                                   ,KC_LEFT   ,KC_DOWN ,KC_UP   ,KC_RGHT  ,F(F_GUI)
 
-                                                               ,OSL(NMDIA),KC_DEL
-                                                               ,KC_LEAD
-                                                               ,F(F_HUN)  ,KC_ENT ,KC_SPC
+                                                               ,F(F_ALT),F(F_CTRL)
+                                                               ,KC_PGUP
+                                                               ,KC_PGDN ,KC_DEL ,KC_BSPC
     ),
 
 /* Keymap 1: Adore layer
@@ -368,20 +368,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [NMDIA] = LAYOUT_ergodox(
 // left hand
- KC_NO      ,KC_F9       ,KC_F7      ,KC_F5   ,KC_F3   ,KC_F1   ,LGUI(KC_L)
-,KC_NO      ,KC_NO       ,KC_NO      ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO
-,KC_NO      ,KC_NO       ,KC_NO      ,KC_NO   ,KC_NO   ,KC_NO
-,KC_NO      ,KC_NO       ,KC_NO      ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO
+ KC_NO      ,KC_F1       ,KC_F2      ,KC_F3   ,KC_F4   ,KC_F5   ,LGUI(KC_L)
+,KC_MNXT    ,KC_NO       ,KC_NO      ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO
+,KC_MPRV    ,KC_NO       ,KC_NO      ,KC_NO   ,KC_NO   ,KC_NO
+,KC_MPLY    ,KC_NO       ,KC_NO      ,KC_NO   ,KC_NO   ,KC_NO   ,KC_TRNS
 ,KC_NO      ,KC_NO       ,KC_NO      ,KC_NO   ,KC_NO
                                                         ,KC_MUTE ,KC_VOLU
                                                                  ,KC_VOLD
                                                  ,KC_NO ,KC_NO   ,KC_TRNS
 
                                                                      // right hand
-                                                                     ,KC_TRNS   ,KC_F10  ,KC_F2   ,KC_F4   ,KC_F6   ,KC_F8    ,KC_NO
-                                                                     ,KC_NO     ,KC_NO   ,KC_NO   ,KC_UP   ,KC_NO   ,KC_NO    ,KC_NO
-                                                                                ,KC_NO   ,KC_LEFT ,KC_DOWN ,KC_RGHT ,KC_NO    ,KC_NO
-                                                                     ,KC_NO     ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO    ,KC_NO
+                                                                     ,KC_TRNS   ,KC_F6   ,KC_F7   ,KC_F8   ,KC_F9   ,KC_F10    ,KC_NO
+                                                                     ,KC_NO     ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO    ,KC_VOLU
+                                                                                ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO    ,KC_VOLD
+                                                                     ,KC_NO     ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO    ,KC_MUTE
                                                                                          ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO    ,KC_NO
 
                                                                      ,KC_TRNS   ,KC_NO
